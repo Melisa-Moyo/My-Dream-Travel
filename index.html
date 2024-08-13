@@ -1,0 +1,1607 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <style>
+   .navbar .nav-item a{
+      color: #000;
+    font-family: Cambo;
+    font-weight: 400;
+    word-wrap: break-word;
+    letter-spacing: 2px;
+    }
+
+    .navbar .nav-item a:hover{
+      text-decoration: underline;
+      color: #fff;
+      background-color: #000;
+      transition: all ease-in-out 0.40s;
+    }
+
+    .introPage h1 {
+      font-family: "Cardo", serif;
+      font-weight: 600;
+      margin-top: 90px;
+    }
+    .introPage p {
+      font-family: "Cardo", serif;
+      font-weight: 400;
+      text-align: left;
+    }
+    .introPage a {
+      background-color: #000;
+      padding: 10px 10px;
+      color: #fff;
+      text-align: left;
+    }
+    .navbar {
+      background-color: #fff !important;
+    }
+    .imagesCollage img {
+      height: 40vh;
+    }
+    #introPageSection {
+      background-color: #fff !important;
+    }
+    .introSection h1 {
+      left: 20px; 
+      top: 215px; 
+      position: absolute; 
+      color: black; 
+      font-size: 60px; 
+      font-family: Cambo; 
+      font-weight: 400; 
+      word-wrap: break-word;
+    }
+    .introSection p {
+      left: 20px; 
+      top: 275px; 
+      position: absolute; 
+      color: black; 
+      font-size: 24px; 
+      font-family: Cambo;
+      font-weight: 400; 
+      word-wrap: break-word;
+    }
+    .introSection a {
+      left: 20px;
+      top: 390px;
+      position: absolute;
+      color: #fff;
+      background-color: #000;
+      padding: 10px 50px;
+    }
+    .image1 img {
+      width: 345px; 
+      height: 233px; 
+      left: 575px; 
+      top: 100px; 
+      position: absolute;
+    }
+    .image2 img {
+      width: 350px;
+      height: 290px;
+      left: 945px;
+      top: 50px;
+      position: absolute;
+    }
+    .image3 img {
+      width: 350px; 
+      height: 220px; 
+      left: 580px; 
+      top: 350px; 
+      position: absolute;
+    }
+    .image4 img {
+      width: 360px;
+      height: 220px;
+      left: 950px;
+      top: 350px;
+      position: absolute;
+    }
+    #aboutGreece {
+      background-color: #20427F !important;
+      height: 100vh;
+      margin-top: 545px;
+    }
+    .introAboutSection h1 {
+      left: 10px;
+      top: 665px;
+      position: absolute; 
+      color: white; 
+      font-size: 30px; 
+      font-family: Baskervville; 
+      font-weight: 100; 
+      word-wrap: break-word;
+    }
+    .introAboutSection p {
+      left: 15px; 
+      top: 700px; 
+      position: absolute; 
+      color: white; 
+      font-size: 32px; 
+      font-family: 'Playfair Display';
+      font-weight: 800; 
+      word-wrap: break-word;
+    }
+    .introAboutSection .imgIntro img {
+      width: 506px;
+      height: 393px; 
+      left: 10px; 
+      top: 760px; 
+      position: absolute; 
+      border: 1px rgba(32, 66, 127, 0.57) solid;
+    }
+    .aboutGreeceMore1 p {
+      width: 418px;
+      height: 462px;
+      left: 538px;
+      top: 605px;
+      text-align: left;
+      position: absolute;
+      color: #fff;
+      font-size: 16.8px;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      word-wrap: break-word;
+      letter-spacing: 1px;
+    }
+    .imgIntro2 img {
+      width: 391px;
+      height: 327px;
+      left: 537px;
+      top: 855px;
+      position: absolute;
+      border: 1px rgba(32, 66, 127, 0.44) solid;
+    }
+    .aboutGreeceMore2 p {
+      width: 338px;
+      height: 365px;
+      left: 970px;
+      top: 620px;
+      position: absolute;
+      color: white;
+      font-size: 16.8px;
+      text-align: left;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      word-wrap: break-word;
+      letter-spacing: 1px;
+    }
+    .imgIntro3 img {
+      width: 348px;
+      height: 318px;
+      left: 970px;
+      top: 825px;
+      position: absolute;
+    }
+
+/*--------------------------------------------------------------
+# Places
+--------------------------------------------------------------*/
+    .placesToVisit h1 {
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-size: 50px;
+      font-weight: bolder;
+    }
+    .placesLocation iframe {
+      top: 1295px;
+      left: 450px;
+      position: absolute;
+    }
+    .imgLocations1 img {
+      width: 428px;
+      height: 263px;
+      left: 913px;
+      top: 1295px;
+      position: absolute;
+    }
+    .imgLocations2 img {
+      width: 428px;
+      height: 263px;
+      left: 913px;
+      top: 1528px;
+      position: absolute;
+    }
+    .list-group {
+      top: 100px;
+    } 
+    #list-item-1 h4 {
+      top: 100px;
+      position: absolute;
+    }
+    .aboutSantorini {
+      width: 891px; 
+      height: 543px; 
+      left: 446px; 
+      top: 1232px; 
+      position: absolute; 
+      background: rgba(132.50, 173.66, 239.87, 0.18);
+    }
+    .aboutSantorini h1 {
+      left: 40px;
+      top: 14px;
+      position: absolute;
+      color: #000;
+      font-size: 56px;
+      font-family: Arbutus Slab;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+    .aboutSantorini p {
+      left: 40px;
+      top: 82px;
+      position: absolute;
+      color: black;
+      font-size: 21px;
+      font-family: Arbutus Slab;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+    .placesInSantorini1 p {
+      left: 458px;
+      top: 2423px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: Arbutus Slab;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+    .placesInSantorini1 img {
+      width: 261px;
+      height: 243px;
+      left: 450px;
+      top: 2458px;
+      position: absolute;
+    }
+    .placesInSantorini2 p {
+      left: 754px;
+      width: 30%;
+      top: 2423px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: Arbutus Slab;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+    .placesInSantorini2 img {
+      width: 261px;
+      height: 243px;
+      left: 740px;
+      top: 2458px;
+      position: absolute;
+    }
+    .placesInSantorini3 p {
+      left: 1024px;
+      top: 2423px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: Arbutus Slab;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+    .placesInSantorini3 img {
+      width: 261px;
+      height: 243px;
+      left: 1030px;
+      top: 2458px;
+      position: absolute;
+    }
+    .placesInSantorini4 p {
+      left: 448px;
+      top: 2706px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: Arbutus Slab;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+    .placesInSantorini4 img {
+      width: 261px;
+      height: 243px;
+      left: 450px;
+      top: 2758px;
+      position: absolute;
+    }
+    .placesInSantorini5 p {
+      left: 734px;
+      top: 2706px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: Arbutus Slab;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+    .placesInSantorini5 img {
+      width: 261px;
+      height: 243px;
+      left: 750px;
+      top: 2758px;
+      position: absolute;
+    }
+    .placesInSantorini6 p {
+      left: 1034px;
+      top: 2706px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: Arbutus Slab;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+    .placesInSantorini6 img {
+      width: 261px;
+      height: 243px;
+      left: 1030px;
+      top: 2758px;
+      position: absolute;
+    }
+    .whereToVisit h2 {
+      left: 30px;
+      top: 3030px;
+      position: absolute;
+    }
+    .hotel1 img {
+      width: 260px;
+      height: 238px;
+      left: 452px;
+      top: 1272px;
+      position: absolute;
+    }
+    .hotel1 p {
+      left: 452px;
+      top: 1230px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+    .hotel2 img {
+      width: 260px;
+      height: 238px;
+      left: 764px;
+      top: 1272px;
+      position: absolute;
+    }
+    .hotel2 p {
+      left: 764px;
+      top: 1230px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+    .hotel3 img {
+      width: 260px;
+      height: 238px;
+      left: 1056px;
+      top: 1272px;
+      position: absolute;
+    }
+    .hotel3 p {
+      left: 1056px;
+      top: 1233px;
+      position: absolute;
+      color: black;
+      font-size: 23px;
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+    .hotel4 img {
+      width: 260px;
+      height: 228px;
+      left: 452px;
+      top: 1560px;
+      position: absolute;
+    }
+    .hotel4 p {
+      left: 440px;
+      top: 1528px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+    .hotel5 img {
+      width: 260px;
+      height: 228px;
+      left: 764px;
+      top: 1560px;
+      position: absolute;
+    }
+    .hotel5 p {
+      left: 779px;
+      top: 1528px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+    .hotel6 img {
+      width: 260px;
+      height: 228px;
+      left: 1056px;
+      top: 1560px;
+      position: absolute;
+    }
+    .hotel6 p {
+      left: 1056px;
+      top: 1528px;
+      position: absolute;
+      color: black;
+      font-size: 24px;
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+
+
+/*--------------------------------------------------------------
+# More Places Visits
+--------------------------------------------------------------*/
+
+.morePlacesVisits {
+  margin-top: 10px;
+}
+.morePlacesVisits h4{
+  margin-left: 720px;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+}
+.moreGroup1, .moreGroup2 {
+  display: flex;
+    justify-content: flex-end;
+    margin-bottom: 7px;
+}
+
+.moreGroup1 .morePlace1, .moreGroup1 .morePlace2, .moreGroup1 .morePlace3,
+.moreGroup2 .morePlace4, .moreGroup2 .morePlace5, .moreGroup2 .morePlace6 {
+  text-align: center;
+  flex-basis: 10%;
+}
+
+.morePlace1 img, .morePlace2 img, .morePlace3 img,
+.morePlace4 img, .morePlace5 img, .morePlace6 img {
+  width: 260px;
+  height: 32vh;
+  margin: 20px;
+}
+
+.morePlace1 p, .morePlace2 p, .morePlace3 p,
+.morePlace4 p, .morePlace5 p, .morePlace6 p {
+  font-size: 18px;
+  font-family: Arbutus Slab, serif;
+  color: black;
+  margin-top: -12px;
+}
+
+.list-group{
+  margin-top: 50px;
+  width: 380px !important;
+  margin-left: 20px !important;
+  border-radius: 1px;
+ 
+}
+
+.list-group.moved {
+    margin-top: -550px;
+}
+
+.list-group-item{
+  height: 10vh;
+  padding: 14px;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #c8daf7; 
+  border: 1px solid #c8daf7;
+}
+.list-group a{
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.list-group-item:hover{
+  color: #fff;
+  background-color: #20427F;
+  border: 1px solid #20427F;
+}
+
+
+#content-container{
+  height: 100vh;
+}
+
+
+.section {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+
+
+
+    
+/*--------------------------------------------------------------
+# Resturants
+--------------------------------------------------------------*/
+
+.restaurants-to-visit {
+  padding: 10px;
+  background:#bdc3cd;
+  height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.category-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.category-list li {
+  margin: 0 1rem;
+}
+
+.category-link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #333;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.category-link.active {
+  background: #696c73;
+  color: #fff;
+}
+
+.tab-pane {
+  display: none; /* Correct */
+}
+
+.tab-pane.active {
+  display: block; /* Correct */
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.col-md-3 {
+  flex: 1 1 calc(25% - 1rem);
+  max-width: calc(25% - 1rem);
+}
+
+.event-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.event-item img {
+  width: 100%;
+  height: 34vh;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3333338a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.event-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h4 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.view-more {
+  text-decoration: none;
+  background: #fff;
+  color: #333;
+  padding: 5px 15px;
+  border-radius: 1px;
+}
+
+.view-more:hover {
+  color: #fff;
+  background: #333;
+  text-decoration: underline;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.contact {
+padding-bottom: 3px;
+}
+.section-title h2{
+font-size: 60px;
+margin-top: 20px;
+}
+.section-title p{
+  text-align: center;
+}
+.contact .email-link {
+margin-top: 70px;
+margin-left: 20px;
+margin-bottom: 50px;
+}
+.contact .email-link a {
+text-decoration: none;
+color: #4b5052;
+}
+.email-link i{
+  margin-left: 530px;
+    font-size: 28px;
+}
+.contact .social-links {
+margin-top: 25px;
+display: flex;
+justify-content: center;
+}
+.contact .social-links a {
+font-size: 18px;
+display: inline-block;
+color: #ffffff;
+line-height: 1;
+margin: 0 8px;
+transition: 0.3s;
+padding: 14px;
+border-radius: 50px;
+border: 1px solid #020202;
+}
+.contact .email-link a:hover {
+text-decoration: underline;
+color: #17191a;
+font-weight: bold;
+font-size: 20px;
+transition: all 0.3s ease-in-out;
+}
+
+.contact .social-links a:hover {
+color: #fff;
+border-color: #ffffff;
+background: #6d6969;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+background-size: cover;
+color: #0c9db9;
+font-size: 14px;
+text-align: center;
+padding: 5px 0;
+position: relative;
+}
+#footer::before {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+height: 35vh;
+background: #20427f;
+}
+#footer .container {
+position: relative;
+}
+#footer p {
+font-size: 15;
+font-style: italic;
+padding: 0;
+margin: 22px 0 35px 0;
+}
+#footer .social-links a {
+font-size: 18px;
+display: inline-block;
+background: #ffffff;
+line-height: 1;
+padding: 8px 0;
+margin-right: 4px;
+border-radius: 50%;
+text-align: center;
+width: 36px;
+height: 36px;
+transition: 0.3s;
+}
+#footer .code-link {
+font-size: 20px;
+color: #0dcaf0;
+}
+#footer .code-link a {
+color: #0c9db9;
+text-decoration: none;
+}
+#footer .code-link a:hover {
+color: #0dcaf0;
+text-decoration: underline;
+transition: all 0.3s ease-in-out;
+}
+#footer .social-links a:hover {
+background: #4a5c7e;
+color: #fff;
+text-decoration: none;
+border-color: #4a5c7e;
+}
+
+
+
+/*----------------------------------------------
+Media Queries
+-----------------------------------------------*/
+@media (max-width: 767px) {
+  body{
+    overflow-x: hidden;
+  }
+  .navbar>.container-fluid{
+    display: flex;
+    justify-content: start;
+    gap: 60px;
+  }
+  .introSection{
+    height: 50vh;
+  }
+  .introPage img, .imagesCollage img{
+    display: none;
+  }
+
+ .aboutGreeceMore1 img, .aboutGreeceMore2 img, 
+  .morePlace1 img, .morePlace2 img, .morePlace3 img, 
+  .morePlace4 img, .morePlace5 img, .morePlace6 img {
+    display: block;
+        width: 100px;
+        height: 10vh;
+        left: 270px;
+        margin-top: 10px;
+  }
+  .imgIntro2 img, .imgIntro3 img{
+    display: none;
+  }
+
+  .introAboutSection .imgIntro img {
+    width: 320px;
+        height: 35vh;
+        top: 1350px;
+        left: 6px;
+    }
+    .introPage h1,.introSection h1{
+      left: 82px;
+    top: 240px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    font-size: 27px;
+    }
+  .introPage p, .introSection p{
+    margin: 0 auto;
+        text-align: center;
+        display: block;
+        left: 92px;
+        font-size: 14px;
+        top: 214px;
+  }
+  .introPage a,.introSection a{
+    top: 340px;
+        left: 92px;
+        font-size: 14px;
+  }
+  .introAboutSection h1{
+    top: 940px;
+    font-size: 18px;
+    left: 27px;
+  } 
+  .introAboutSection p {
+    top: 966px;
+        font-size: 16px;
+        left: 26px;
+  }
+  .aboutGreeceMore1 p{
+    top: 1010px;
+        left: 20px;
+        font-size: 12px;
+        width: 84%;
+  }
+  .aboutGreeceMore2 p{
+    top: 1200px;
+        left: 20px;
+        font-size: 12px;
+        width: 84%;
+  }
+
+  #aboutGreece, .placesToVisit, .contact, #footer {
+    padding: 20px;
+    width: 99%;
+  }
+
+  .list-group {
+        padding: 0;
+        margin: 5px;
+    }
+
+  .list-group-item {
+    padding: 10px;
+    height: 7vh;
+    width: 270px;
+  }
+
+
+  #content-container {
+    display: none;
+}
+  .morePlacesVisits {
+    margin-top: 210px;
+    font-size: 24px;
+        margin-left: 10px;
+        padding: 10px;
+}
+  .moreGroup1{
+    flex-direction: row-reverse;
+  } 
+  .moreGroup2 {
+    flex-direction: row-reverse;
+  }
+  .placesLocation iframe{
+    left: 5px;
+        width: 170px;
+        height: 30vh;
+        position: absolute;
+    margin-top: -400px;
+  }
+  .imgLocations1 img{
+    width: 150px;
+        height: 20vh;
+        left: 175px;
+        top: 1609px;
+  }
+  .imgLocations2 img{
+    width: 150px;
+        height: 20vh;
+        left: 175px;
+        top: 1742px;
+  }
+  .aboutSantorini {
+    width: 299px;
+    height: 49vh;
+    left: 16px;
+    margin-top: -450px;
+    top: 1840px;
+  }
+  .aboutSantorini h1 {
+    left: 10px;
+    top: 10px;
+    font-size: 24px;
+  }
+  .aboutSantorini p {
+    left: 10px;
+    top: 42px;
+    font-size: 10px;
+
+  }
+
+  .hotel1 img {
+    width: 92px;
+    height: 92px;
+    left: 12px;
+    top: 1532px;
+  }
+  .hotel1 p {
+    left: 12px;
+    top: 1517px;
+    font-size: 9px;
+  }
+  .hotel2 img {
+    width: 92px;
+    height: 92px;
+    left: 112px;
+    top: 1532px;
+  }
+  .hotel2 p {
+    left: 112px;
+    top: 1517px;
+    font-size: 9px;
+  }
+  .hotel3 img {
+    width: 92px;
+    height: 92px;
+    left: 212px;
+    top: 1532px;
+  }
+  .hotel3 p {
+    left: 212px;
+    top: 1517px;
+    font-size: 9px;
+  }
+
+  .hotel4 p {
+    left: 12px;
+    top: 1626px;
+    font-size: 9px;
+  }
+  .hotel4 img {
+    width: 92px;
+    height: 92px;
+    left: 12px;
+    top: 1640px;
+  }
+  .hotel5 p {
+    left: 132px;
+    top: 1628px;
+    font-size: 7px;
+  }
+  .hotel5 img {
+    width: 92px;
+    height: 92px;
+    left: 112px;
+    top: 1640px;
+  }
+  .hotel6 p {
+    left: 212px;
+    top: 1626px;
+    font-size: 9px;
+  }
+  .hotel6 img {
+    width: 92px;
+    height: 92px;
+    left: 212px;
+    top: 1640px;
+  }
+
+
+  .heading {
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 25px;
+  }
+  .category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 60%;
+  }
+  .event-item {
+    width: 60px;
+    left: -18px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .event-item img {
+    height: 22vh;
+  }
+  .overlay h4 {
+    font-size: 6px;
+    margin-left: 0px;
+}
+.view-more {
+    margin-left: 0px;
+    font-size: 9px;
+    padding: 3px;
+}
+.contact .email-link i {
+        margin-left: 120px;
+        font-size: 20px;
+    }
+    .restaurants-to-visit {
+    width: 90%;
+    }
+    .section-title h2,.heading,.tabs,.placesToVisit h1,.category-list li{
+      overflow: hidden;
+    }
+
+    #footer {
+    font-size: 12px;
+  }
+
+  #footer .social-links a {
+    font-size: 14px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.imagesCollage{
+  display: none;
+} 
+.introSection h1{
+  left: 245px;
+  top: 130px;
+  font-size: 40px;
+}
+.introSection p{
+  left: 220px;
+  font-size: 30px;
+  top: 150px;
+}
+.introSection a{
+  top: 320px;
+  left: 300px;
+}
+.introAboutSection h1{
+  top: 610px;
+  left: 220px;
+}
+.introAboutSection p{
+  top: 650px;
+  left: 150px;
+}
+.aboutGreeceMore1 p {
+        font-size: 20px;
+        width: 70%;
+        left: 130px;
+        top: 720px;
+    }
+    .aboutGreeceMore2 p {
+      font-size: 20px;
+        width: 60%;
+        left: 130px;
+        top: 990px;
+    }
+    .introAboutSection .imgIntro img{
+      width: 80%;
+        height: 30vh;
+        top: 1250px;
+        left: 60px;
+    }
+    .imgIntro2, .imgIntro3{
+      display: none;
+    }
+    .imgLocations1 img, .imgLocations2 img{
+      display: none;
+    }
+    .placesLocation iframe {
+        top: 2430px;
+        left: auto;
+    }
+    .aboutSantorini{
+      left: 16px;
+      top: 2332px;
+      width: 90%;
+    }
+    .aboutSantorini p{
+      font-size: 17px;
+    width: 80%;
+    }
+    .whereToVisit {
+      left: -446px;
+        top: 842px;
+        position: absolute;
+    }
+    .whereToVisit p{
+      display: none;
+    }
+    .whereToVisit img {
+      width: 230px;
+    }
+    .list-group {
+    width: 580px !important;
+    height: 10vh;
+    }
+    .morePlacesVisits{
+      display: none !important;
+    }
+
+ .email-link i{
+  margin-left: 300px;
+ }
+
+}
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-airplane-engines"></i> My Deram Travel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav mx-auto">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#introAboutSection">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#content-container">Places</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#restaurants-to-visit">Restaurants</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+  </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+    <section class="introPage">
+      <div id="introSection" class="introSection">
+        <h1>Explore Santorini</h1>
+        <p>Discover the beauty of Greece</p>
+        <a href="#introAboutSection">Learn More</a>
+        <div class="imagesCollage">
+          <div class="image1">
+            <img src="https://images.pexels.com/photos/259585/pexels-photo-259585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 1">
+          </div>
+          <div class="image2">
+            <img src="https://images.pexels.com/photos/984874/pexels-photo-984874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2">
+          </div>
+          <div class="image3">
+            <img src="https://images.pexels.com/photos/2700087/pexels-photo-2700087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3">
+          </div>
+          <div class="image4">
+            <img src="https://images.pexels.com/photos/772700/pexels-photo-772700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 4">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutGreece" class="text-center">
+      <div id="introAboutSection" class="introAboutSection">
+        <h1>Greece: History Meets Beauty</h1>
+        <p>Ancient Legacy, Timeless Charm</p>
+        <div class="imgIntro">
+          <img src="https://www.industriall-union.org/sites/default/files/styles/article_top_image_w1440/public/uploads/images/2017/GREECE/greece_pexels-photo-13966.jpeg?itok=H6V0uMiN" alt="Greece">
+        </div>
+      </div>
+      <div class="aboutGreeceMore1">
+        <p>Greece, located in southeastern Europe, is a country known for its rich history, stunning landscapes, and vibrant culture. As the cradle of Western civilization, Greece is celebrated for its ancient ruins, including the Parthenon in Athens and the archaeological sites of Delphi and Olympia. The country boasts a diverse geography, with beautiful islands like Santorini and Crete, picturesque coastlines, and mountainous regions.  </p>
+      </div>
+      <div class="imgIntro2">
+        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="More Greece">
+      </div>
+      <div class="aboutGreeceMore2">
+        <p>Greek culture is deeply rooted in traditions, with a strong emphasis on family, religion, and cuisine, famous for dishes like moussaka and souvlaki. Today, Greece is a modern nation that blends its historical legacy with contemporary life, attracting millions of visitors each year.</p>
+      </div>
+      <div class="imgIntro3">
+        <img src="https://images.unsplash.com/photo-1469796466635-455ede028aca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Even More Greece">
+      </div>
+    </section>
+
+
+    <div id="content-container">
+
+    <section id="placesToVisit" class="placesToVisit">
+      <h1>Places to Visit</h1>
+      <div class="placesLocation">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102754.70000128998!2d25.420630850000002!3d36.40715385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1499ce86adfd9ff7%3A0xb2a761f740d68afc!2sSantorini!5e0!3m2!1sen!2sza!4v1723232690599!5m2!1sen!2sza" width="463" height="496" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="imgLocations1">
+        <img src="https://images.pexels.com/photos/221532/pexels-photo-221532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Location 1">
+      </div>
+      <div class="imgLocations2">
+        <img src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Location 2">
+      </div>
+    </section>
+
+
+    <section id="aboutSantorini" class="aboutSantorini" style="display: none;">
+      <h1>About Santorini</h1>
+      <p>Santorini, Greece, is a stunning island located in the Aegean Sea, renowned for its breathtaking beauty and dramatic landscapes. Known for its iconic white-washed buildings with blue-domed roofs, the island offers a picturesque contrast against the deep blue of the sea and sky. The island's volcanic origin has created a unique topography, including steep cliffs and black sand beaches, which are among the many reasons it is a popular destination for travelers seeking both relaxation and adventure. The capital, Fira, is a vibrant hub with charming narrow streets, local shops, and a variety of dining options that overlook the caldera, providing spectacular sunset views.
+ <br /> Santorini's rich history and culture are equally captivating. The island is home to ancient ruins such as Akrotiri, a well-preserved Minoan city that was buried by volcanic ash around 1600 BC, offering a glimpse into its past. Traditional Greek cuisine can be enjoyed at local tavernas, where fresh ingredients and time-honored recipes highlight the island's culinary heritage. From exploring its archaeological sites and quaint villages to indulging in local wines and seafood, Santorini provides a unique blend of historical charm and modern luxury that continues to attract visitors from around the globe.</p>
+    </section>
+
+    <section id="whereToVisit" class="whereToVisit" style="display: none;">
+      <div class="hotel1">
+        <img src="https://images.pexels.com/photos/5608349/pexels-photo-5608349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hotel 1">
+        <p>Watch the Sunset at Oia</p>
+      </div>
+      <div class="hotel2">
+        <img src="https://volcano.si.edu/gallery/photos/GVP-00106.jpg" alt="Hotel 2">
+        <p>Santorini Volcano Tour</p>
+      </div>
+      <div class="hotel3">
+        <img src="https://images.pexels.com/photos/1010649/pexels-photo-1010649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hotel 3">
+        <p>Swimming at Ammoudi Bay</p>
+      </div>
+      <div class="hotel4">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/24/5b/b8/tomato-industrial-museum.jpg?w=1200&h=-1&s=1" alt="Hotel 4">
+        <p>Tomato Industrial Museum</p>
+      </div>
+      <div class="hotel5">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/c0/95/eb/ancient-thera.jpg?w=1200&h=-1&s=1" alt="Hotel 5">
+        <p>Visit Ancient Thera</p>
+      </div>
+      <div class="hotel6">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/ef/26/df/caption.jpg?w=1000&h=-1&s=1" alt="Hotel 6">
+        <p>Go on Scuba Adventure</p>
+      </div>
+    </section>
+
+
+    <section id="morePlaces" class="morePlacesVisits" style="display: none;">
+      <h4>More Places To Visit</h4>
+      <div class="moreGroup1">
+        <div class="morePlace1">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/c1/17/6c/photo5jpg.jpg?w=1200&h=-1&s=1" alt="ZAKYNTHOS, GREECE">
+          <p>ZAKYNTHOS, GREECE</p>
+        </div>
+        <div class="morePlace2">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/70/c8/cd/dedicated-to-both-athena.jpg?w=1200&h=-1&s=1" alt="ATHENS, GREECE">
+          <p>ATHENS, GREECE</p>
+        </div>
+        <div class="morePlace3">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/02/1e/92/caption.jpg?w=1200&h=-1&s=1" alt="SKIATHOS, GREECE">
+          <p>SKIATHOS, GREECE</p>
+        </div>
+      </div>
+      
+      <div class="moreGroup2">
+        <div class="morePlace4">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/99/2f/0a/caption.jpg?w=800&h=-1&s=1" alt="RHODES, GREECE">
+          <p>RHODES, GREECE</p>
+        </div>
+        <div class="morePlace5">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/81/2d/63/caption.jpg?w=1200&h=-1&s=1&cx=1800&cy=1199&chk=v1_4611867f8269144c4d23" alt="MYKONOS, GREECE">
+          <p>MYKONOS, GREECE</p>
+        </div>
+        <div class="morePlace6">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/64/04/8b/caption.jpg?w=800&h=-1&s=1" alt="CORFU, GREECE">
+          <p>CORFU, GREECE</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#placesToVisit"><i class="bi bi-geo"></i> Location</a>
+        <a class="list-group-item list-group-item-action" href="#aboutSantorini"><i class="bi bi-info-circle"></i> About</a>
+        <a class="list-group-item list-group-item-action" href="#whereToVisit"><i class="bi bi-person-walking"></i> Things To Do</a>
+        <a id="morePlacesLink" class="list-group-item list-group-item-action" href="#morePlaces"><i class="bi bi-map"></i> More Places To Visit</a>
+      </div>
+    </div>
+
+
+    <section id="restaurants-to-visit" class="restaurants-to-visit">
+      <div class="container">
+        <h1 class="heading">Explore the Best Dining Spots Around Santorini</h1>
+        <div class="tabs">
+          <ul class="category-list">
+            <li><a class="category-link active" href="#tab-1">All Resturants</a></li>
+            <li><a class="category-link" href="#tab-2">Greek</a></li>
+            <li><a class="category-link" href="#tab-3">Seafood</a></li>
+            <li><a class="category-link" href="#tab-4">Bars</a></li>
+            <li><a class="category-link" href="#tab-5">Fast Food</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane active">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/7c/48/4a/the-best-establishment.jpg?w=1200&h=-1&s=1" alt="Argo Restaurant Village">
+                    <div class="overlay">
+                      <h4>Argo Restaurant Village</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g482942-d1105505-Reviews-Argo_Restaurant_Village-Fira_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/b8/74/a7/the-lovely-nadia-at-our.jpg?w=1200&h=-1&s=1" alt="Santo Athiri Restaurant">
+                    <div class="overlay">
+                      <h4>Santo Athiri Restaurant</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g658914-d10304509-Reviews-Santo_Athiri_Restaurant-Kamari_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/12/82/53/the-restaurant.jpg?w=1200&h=-1&s=1" alt="Katsaboo Restaurant">
+                    <div class="overlay">
+                      <h4>Katsaboo Restaurant</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g482942-d21302387-Reviews-Katsaboo_Restaurant-Fira_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/a9/92/68/terrace.jpg?w=1100&h=-1&s=1" alt="VR Cafe Bar">
+                    <div class="overlay">
+                      <h4>VR Cafe Bar</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g482942-d14772305-Reviews-VR_cafe_Bar-Fira_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/ef/aa/08/falafeland.jpg?w=1200&h=-1&s=1" alt="Falafeland">
+                    <div class="overlay">
+                      <h4>Falafeland</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g482942-d10119312-Reviews-Falafeland-Fira_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/ad/6a/73/your-table-in-our-beach.jpg?w=1000&h=-1&s=1" alt="Ariale Restaurant">
+                    <div class="overlay">
+                      <h4>Ariale Restaurant</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g658914-d21168189-Reviews-Ariale_Restaurant-Kamari_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/3f/62/bc/welcome.jpg?w=900&h=-1&s=1" alt="Blend All Day Bar">
+                    <div class="overlay">
+                      <h4>Blend All Day Bar</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g658914-d24059889-Reviews-Blend_All_Day_Bar-Kamari_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/0a/93/09/afros.jpg?w=1200&h=-1&s=1" alt="Afros">
+                    <div class="overlay">
+                      <h4>Afros</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g12225501-d3176585-Reviews-Afros-Agios_Georgios_Perivolos_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-2" class="tab-pane">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/7c/48/4a/the-best-establishment.jpg?w=1200&h=-1&s=1" alt="Argo Restaurant Village">
+                    <div class="overlay">
+                      <h4>Argo Restaurant Village</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g482942-d1105505-Reviews-Argo_Restaurant_Village-Fira_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/b8/74/a7/the-lovely-nadia-at-our.jpg?w=1200&h=-1&s=1" alt="Santo Athiri Restaurant">
+                    <div class="overlay">
+                      <h4>Santo Athiri Restaurant</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g658914-d10304509-Reviews-Santo_Athiri_Restaurant-Kamari_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/ad/6a/73/your-table-in-our-beach.jpg?w=1000&h=-1&s=1" alt="Ariale Restaurant">
+                    <div class="overlay">
+                      <h4>Ariale Restaurant</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g658914-d21168189-Reviews-Ariale_Restaurant-Kamari_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-3" class="tab-pane">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/3f/62/bc/welcome.jpg?w=900&h=-1&s=1" alt="Blend All Day Bar">
+                    <div class="overlay">
+                      <h4>Blend All Day Bar</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g658914-d24059889-Reviews-Blend_All_Day_Bar-Kamari_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/0a/93/09/afros.jpg?w=1200&h=-1&s=1" alt="Afros">
+                    <div class="overlay">
+                      <h4>Afros</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g12225501-d3176585-Reviews-Afros-Agios_Georgios_Perivolos_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-4" class="tab-pane">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/ad/6a/73/your-table-in-our-beach.jpg?w=1000&h=-1&s=1" alt="Ariale Restaurant">
+                    <div class="overlay">
+                      <h4>Ariale Restaurant</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g658914-d21168189-Reviews-Ariale_Restaurant-Kamari_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/0a/93/09/afros.jpg?w=1200&h=-1&s=1" alt="Afros">
+                    <div class="overlay">
+                      <h4>Afros</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g12225501-d3176585-Reviews-Afros-Agios_Georgios_Perivolos_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-5" class="tab-pane">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/ef/aa/08/falafeland.jpg?w=1200&h=-1&s=1" alt="Falafeland">
+                    <div class="overlay">
+                      <h4>Falafeland</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g482942-d10119312-Reviews-Falafeland-Fira_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="event-item">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/b8/74/a7/the-lovely-nadia-at-our.jpg?w=1200&h=-1&s=1" alt="Santo Athiri Restaurant">
+                    <div class="overlay">
+                      <h4>Santo Athiri Restaurant</h4>
+                      <a href="https://www.tripadvisor.co.za/Restaurant_Review-g658914-d10304509-Reviews-Santo_Athiri_Restaurant-Kamari_Santorini_Cyclades_South_Aegean.html" class="view-more">View More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <section id="contact" class="contact">
+      <div class="container">
+          <div class="section-title">
+              <h2 class="text-center">Contact Me</h2>
+              <p>Feel free to reach out for any inquiries, collaborations, or just to say hello. You can Email or connect with me on Linkedin. I'm always eager to connect and explore new opportunities.</p>
+              <div class="contact-me">
+                <div class="social-links">
+                  <a href="https://github.com/Melisa-Moyo" class="github" title="GitHub Profile"><i class="bi bi-github" style="color: #000;"></i></a>
+                  <a href="https://www.linkedin.com/in/melisa-m-a88653142/" class="linkedin Profile" title="Linkedin Profile"><i class="bi bi-linkedin" style="color: #000;"></i></a>
+                  </div>
+                  <div class="email-link">
+                    <i class="bi bi-envelope" style="color: #000;"></i>
+                  <p><a href="mailto:mel73242757@gmail.com">mel73242757@gmail.com</a></p>
+                      </div>  
+              </div>
+            </div>
+
+
+              
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+        <p><strong> Front-End Developer - Dedicated Learner - Striving to Excel</strong></p>
+        <div class="social-links">
+            <a href="https://github.com/Melisa-Moyo" class="github" title="GitHub Profile"><i class="bi bi-github" style="color: #000;"></i></a>
+            <a href="https://www.linkedin.com/in/melisa-m-a88653142/" class="linkedin" title="Linkedin Profile"><i class="bi bi-linkedin" style="color: #000;"></i></a>
+        </div>
+        <div>
+            <p class="code-link"> <a href="https://github.com/Melisa-Moyo/My-Coding-Journey">Open-source</a> by Melisa Moyo </p>
+        </div>
+    </div>
+</footer>
+  </div>
+
+
+
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.list-group-item');
+    const sections = document.querySelectorAll('#content-container section');
+
+    const showSection = (id) => {
+        sections.forEach(section => {
+            section.style.display = (section.id === id) ? 'block' : 'none';
+        });
+    };
+
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            showSection(targetId);
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const morePlacesLink = document.getElementById('morePlacesLink');
+    const listGroup = morePlacesLink.parentElement; 
+
+    morePlacesLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        listGroup.classList.add('moved');
+    });
+
+    const listGroupItems = listGroup.querySelectorAll('.list-group-item');
+    listGroupItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (item.id !== 'morePlacesLink') {
+                listGroup.classList.remove('moved');
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.category-link');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            tabs.forEach(t => t.classList.remove('active'));
+            tabPanes.forEach(pane => pane.classList.remove('active'));
+            
+            tab.classList.add('active');
+            const targetPane = document.querySelector(tab.getAttribute('href'));
+            if (targetPane) {
+                targetPane.classList.add('active');
+            }
+        });
+    });
+});
+
+  </script>
+  
+</body>
+</html>
